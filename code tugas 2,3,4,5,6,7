@@ -1,0 +1,71 @@
+#no 2
+a = float(input('Nilai Awal : ')) # Fungsi float() mengembalikan bilangan ke dalam bentuk float (bilangan dengan titik).
+un = int(input('Suku akhir : ')) #int dalah tipe data numerik yang menampung bilangan bulat
+u = int(input('banyaknya suku :'))
+r = float(input("Rasio : "))
+for n in range(u, un+1):
+    suku = a*(r**(n-1))
+    print(suku)
+
+
+
+#no3
+data_n = input('\nMasukan nilai N, pisahkan dengan tanda koma. contoh: 1,2,3,dst : ')
+list_angka = data_n.split(',')
+daftar_baru = [int(x) for x in list_angka]
+jumlah = 0
+for angka in daftar_baru:
+    jumlah += angka
+rata_rata = jumlah / len(daftar_baru)
+print('\nJumlah  total: {}'.format(jumlah))
+print(f'Nilai rata-rata: {int(rata_rata)}')
+
+
+
+#no4
+print(('\nAPLIKASI PERHITUNGAN BERPANGKAT DENGAN POSISI X^y'))
+x = int(input('Masukan nilai x : '))
+y = int(input('Masukan nilai y : '))
+hasil = x ** y
+print(f'\nHasil = {hasil}')
+
+
+
+#no5
+x = int(input('Masukkan nilai n: '))
+faktorial = 1
+for i in range(1, x + 1):
+  faktorial *= i
+print(f'{x}! = {faktorial}')
+
+
+
+#no6
+import random
+nilacak = random.randint(0, 10)
+print('Coba tebak angka saya, dari 0-10')
+print('=' *50)
+while True:
+  tebakan = int(input('\nMasukkan angka: '))
+  if tebakan == nilacak:
+    print('Tebakanmu benar!')
+    break # berhenti paksa
+  else:
+    print(
+      'Angka tebakan lebih',
+      'kecil' if tebakan < nilacak else 'besar')
+
+
+
+#no7
+print('Masukan angka X dan Y untuk menghitung jumlah angka dari X sampai Y')
+print('=' *50)
+x= int(input('Masukan nilai X   : '))
+y= int(input('Masukan nilai Y   : '))
+print('Deret    : ')
+for antara in range(x,y+1):
+    print(antara, end=' ')
+jumlah= sum(range(x,y+1))
+print(f'\nJumlah : {jumlah}')
+
+
